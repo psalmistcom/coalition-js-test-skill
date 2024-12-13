@@ -1,12 +1,14 @@
 /**
- Explanation of Code 
- * In the code, I begin by ensuring that the DOM is fully loaded using $(document).ready(). This is crucial for ensuring that our jQuery code executes only after the page elements are available.
+
+* Explanation of Code 
+In the code, I begin by ensuring that the DOM is fully loaded using $(document).ready(). This is crucial for ensuring that our jQuery code executes only after the page elements are available.
+
+After that I got the id of the form using the documentgetelementById method and I prevented the form from reloading after the submit button is clicked.
 
 Defining Post Data: We create an object called postInformation that contains the necessary keys for the post. This includes:
 
 title: A string representing the title of the post.
 body: A string that contains the main content of the post.
-userId: An identifier for the user creating the post.
 excerpt: A new key that captures the first 20 characters of the body content. This is done manually in this example, but it can also be dynamically generated using JavaScript string methods.
 Sending the POST Request: We use jQuery's $.ajax() method to send a POST request to the specified API endpoint (https://jsonplaceholder.typicode.com/posts). The parameters for the request include:
 

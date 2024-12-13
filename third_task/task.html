@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third JS tests</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input[type="text"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      .custom-field {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    Coalition JS Tests
+
+    <h2>Update Post and Add Custom Fields</h2>
+    <form id="update-post-form">
+      <label for="post-id">Post ID</label>
+      <input type="number" id="post-id" required placeholder="Enter post ID" />
+
+      <label for="post-title">Post Title</label>
+      <input type="text" id="post-title" placeholder="Enter new title" />
+
+      <label for="post-body">Post Body</label>
+      <textarea id="post-body" placeholder="Enter new body"></textarea>
+
+      <h3>Custom Fields</h3>
+      <div id="custom-fields-container">
+        <div class="custom-field">
+          <!-- <input type="text" class="custom-key" placeholder="Custom Key" />
+          <input type="text" class="custom-value" placeholder="Custom Value" /> -->
+        </div>
+      </div>
+      <button type="button" id="add-custom-field">Add Custom Field</button>
+
+      <br /><br />
+      <button type="submit">Update Post</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./task.js"></script>
+  </body>
+</html>
